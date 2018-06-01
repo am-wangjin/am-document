@@ -27,6 +27,6 @@ sudo mysqld_safe --skip-grant-tables
 新开一个命令行窗口登录mysql  
 mysql -u root  
 修改ROOT密码  
-UPDATE mysql.user SET authentication_string=PASSWORD('YOURNEWPASSWORD'), plugin='mysql_native_password' WHERE User='root';
-支持所有ip访问
+UPDATE mysql.user SET authentication_string=PASSWORD('YOURNEWPASSWORD'), plugin='mysql_native_password' WHERE User='root';  
+支持所有ip访问  
 UPDATE mysql.user SET Host='%' WHERE User='root'
